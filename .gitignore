@@ -32,7 +32,6 @@ nbproject
 .sass-cache
 .tmp
 node_modules
-bower_components
 
 # Other
 validation-report.json
