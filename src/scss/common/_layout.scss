@@ -1,0 +1,295 @@
+
+// Common - Layout
+//------------------------------------------------------------------------------
+
+/* Container */
+.container {
+  max-width: 960px;
+  padding: 0 0;
+
+  .col-lg-12{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* Header */
+.header {
+
+}
+
+.site-name {
+  width: 200px;
+  height: 50px;
+
+  span {
+    //background: url(../img/common/logo.png) no-repeat;
+  }
+}
+
+
+/* Navigation */
+.navigation {
+
+  li {
+
+  }
+
+  a {
+
+  }
+}
+
+/* Content */
+.content {
+  @media (max-width: 991px) {
+    padding-bottom: 20px;
+  };
+
+  @media (max-width: 800px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  };
+
+  .news-section{
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: $sidebar-background-color;
+    border-radius: $box-radius;
+
+    box-shadow: 2px 2px #ded6cc;
+    -webkit-box-shadow: 2px 2px #ded6cc;
+    -moz-box-shadow: 2px 2px #ded6cc;
+
+    header{
+      background: -webkit-linear-gradient($degGrad, $gradient1, $gradient2); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient($degGrad, $gradient1, $gradient2); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient($degGrad, $gradient1, $gradient2); /* For Firefox 3.6 to 15 */
+      background: linear-gradient($degGrad, $gradient1, $gradient2); /* Standard syntax */
+      background-color: $gradient1;
+      border-radius: $box-radius $box-radius 0em 0em;
+      border-bottom: 2px solid #e5e5e5;
+      height: 55px;
+
+      .row{
+        h2{
+          height: 100%;
+          font-weight: bold;
+          color: #fff;
+          font-size: 12px;
+          text-shadow: -1px -1px gray;
+          padding: 20px 0px 20px 20px;
+          margin: 0px;
+        }
+      }
+    }
+
+    .right-column{
+      -webkit-border-image: url('../../img/dots_vertical.png') 2 round;
+      -moz-border-image: url('../../img/dots_vertical.png') 2 round;
+      -o-border-image: url('../../img/dots_vertical.png') 2 round;
+      border-image: url('../../img/dots_vertical.png') 2 round;
+      border-width: 2px 2px 5px;
+      border-style: solid;
+      padding-left: 0px;
+    }
+
+    .last-news{
+      padding-bottom: 30px;
+    }
+
+    .news {
+      padding-right: 0px;
+      .news-image{
+        padding-left: 20px;
+        padding-right: 0px;
+        @media (max-width: 991px) {
+          padding-right: 15px;
+        };
+        img{
+          max-width: 96px;
+          border: 1px solid #eae1d4;
+          padding: 2px 2px 2px 2px;
+        }
+
+        @media (max-width: 991px) {
+          img{
+            margin: 0 auto;
+          }
+        };
+      }
+
+      .news-text{
+        padding-left: 30px;
+      }
+
+      h3{
+        font-weight: bold;
+        color: #2a1f0f;
+        font-size: 13px;
+        margin: 0px 0px 0px 0px;
+        padding: 30px 0px 18px 20px;
+
+        @media (max-width: 800px) {
+          padding-right: 15px;
+        };
+      }
+
+      .more-button{
+        padding-top: 10px;
+        font-size: 12px;
+        color: #e61052;
+        img{
+          padding: 0px 0px 3px 7px;
+        }
+      }
+
+      p{
+        font-size: 12px;
+        color: #97866f;
+        line-height: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+
+/* Fix problem with border in news section IE9 */
+.ie9{
+  .content{
+    .news-section{
+      .right-column{
+        border-style: none;
+      }
+    }
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  .sprite {
+    background-image: url(../../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .sprite-facebook {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -5px;
+  }
+
+  .sprite-google {
+    width: 22px;
+    height: 22px;
+    background-position: -37px -5px;
+  }
+
+  .sprite-twitter {
+    width: 22px;
+    height: 22px;
+    background-position: -69px -5px;
+  }
+
+  label.sprite{
+    font-weight: normal;
+    padding-left: 30px;
+    padding-top: 3px;
+  }
+  .col-md-4{
+    @media (max-width: 991px) {
+      padding-right: 0px;
+      padding-left: 0px;
+    };
+
+    @media (max-width: 800px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    };
+
+    padding: 0px 0px 0px 20px;
+    color: $fonts-sidebar-color;
+    font-size: $font-sidebar-size;
+
+    section:first-child{
+      margin-top: 0px;
+    }
+
+    section{
+      margin-top: 20px;
+      background-color: $sidebar-background-color;
+      padding: 20px 20px 20px 20px;
+      border-radius: $box-radius;
+
+      -webkit-box-shadow: 2px 2px #ded6cc;
+      -moz-box-shadow: 2px 2px #ded6cc;
+      box-shadow: 2px 2px #ded6cc;
+
+      .social-items{
+        margin: 0px -20px 0px -20px;
+        padding: 0px 20px 0px 20px;
+
+        .col-xs-4{
+          padding-right: 0px;
+          padding-left: 0px;
+        }
+
+        #twitter, #google{
+          padding: 0px 0px 0px 15px;
+        }
+      }
+
+      h2{
+        font-weight: bold;
+        color: #E61052;
+        font-size: 13px;
+        padding-top: 0px;
+        margin: 0px 0px 0px 0px;
+      }
+
+      hr.dotted{
+        -webkit-border-image: url('../../img/dots.png') 2 round;
+        -moz-border-image: url('../../img/dots.png') 2 round;
+        -o-border-image: url('../../img/dots.png') 2 round;
+        border-image: url('../../img/dots.png') 2 round;
+        border-width: 2px 2px 3px;
+        margin-left: -18px;
+        margin-right: -18px;
+        overflow: hidden;
+        margin: 20px -20px 20px -20px;
+      }
+
+      ul{
+        list-style-image: url('../../img/li_image.png');
+        padding-left: 20px;
+        margin-bottom: 0px;
+
+        li{
+          padding-bottom: 15px;
+        }
+
+        li:last-child{
+          padding-bottom: 0px;
+        }
+      }
+
+      .vcard{
+        .org{
+          font-weight: bold;
+          padding-bottom: 7px;
+        }
+        .adr{
+          div{
+            padding-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  clear: both;
+}

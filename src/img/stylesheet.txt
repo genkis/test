@@ -1,0 +1,23 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-facebook {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -5px;
+}
+
+.sprite-google {
+    width: 22px;
+    height: 22px;
+    background-position: -37px -5px;
+}
+
+.sprite-twitter {
+    width: 22px;
+    height: 22px;
+    background-position: -69px -5px;
+}
